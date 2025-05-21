@@ -8,5 +8,10 @@
 			"saveAsPDF": true,
 			"uploadToJAMA": false
 		}
-	]
+	],
+    "jamaConfig": {
+        "username": "",
+        "password": "",
+        "server": "https://<server>/rest/v1"
+    }  
 }

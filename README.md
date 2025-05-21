@@ -61,9 +61,14 @@ The Allure test reports to be processed by this script as well as the actions to
 			"inputFolderPath": "project2/input",
 			"outputFolderPath": "project2/output",
 			"saveAsPDF": true,
-			"uploadToJAMA": false
+			"uploadToJAMA": true
 		}
-	]
+	],
+    "jamaConfig": {
+        "username": "",
+        "password": "",
+        "server": "https://<server>/rest/v1"
+    } 
 }
 ```
 
@@ -87,4 +92,4 @@ This feature is enabled by setting to true the `saveAsPDF` attribute of the proj
 
 ### Automated upload of test results to JAMA contour
 
-`TBD`
+This feature is enabled by setting to true the `uploadToJAMA` attribute of the projects defined into the configuration file. Then, the script will load all the Allure reports found under the `inputFolderPath` folder and updated the related test cases in JAMA. The JAMA credentials should be set at `jamaConfig` object.

@@ -3,6 +3,7 @@ export interface Configuration
 {
     website: string;
     projects: Project[];
+    jamaConfig: JamaConfig
 }
 
 export interface Project
@@ -12,4 +13,11 @@ export interface Project
     outputFolderPath: string;
     saveAsPDF: boolean;
     uploadToJAMA: boolean;
+}
+
+export interface JamaConfig 
+{
+    username: string;
+    password: string;
+    server: string;
 }
